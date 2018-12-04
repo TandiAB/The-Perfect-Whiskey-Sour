@@ -18,78 +18,45 @@ html, body{
   background-size: cover;
 }
 
-.intro.inner{
-  float:left;
-  display: table;
-  vertical-align: top;
-  max-width: none;
-}
-
- .inner{
-  max-width: 1000px;
+.inner{
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 28%;
-}
-
-.intro.left{
-  float: left;
-  display: table;
-  vertical-align: middle;
-  max-width: none;
-}
-
- .left{
-   float: left;
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: left;
-  padding-bottom: 28%;
-}
-
-.intro.right{
-  float: left;
-  display: table;
-  vertical-align: middle;
-  max-width: none;
-}
-
-.right{
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: left;
-  padding-bottom: 28%;
 }
 
 .inner h1{
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1000px;
   font-family: 'Yantramanav', sans-serif;
   font-size: 600%;
   font-weight: 400;
   color: #E1EFE9;
 }
 
-.inner h2{
-  height: 100%;
-  width: 100%;
+.inner img{
+  margin: 0 auto;
+  max-width: 500px;
+  height: 30%;
+  width: 30%;
   margin: auto;
-  background: url("whiskey.png");
-  display: table;
+  /* background: url("whiskey.png"); */
+  /* display: table; */
   top: 0;
-  background-size: cover;
 }
 
-.left p{
+.inner p{
+  max-width: 500px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 135%;
+  font-size: 200%;
   font-weight: 400;
   color: #3A6168;
   padding: 10px 20px;
   transition: all 0.5s;
 }
 
-.right .btn{
+.inner .btn{
   font-family: 'Montserrat', sans-serif;
-  font-size: 135%;
+  font-size: 300%;
   font-weight: 400;
   color: #3A6168;
   text-transform: uppercase;
@@ -100,7 +67,7 @@ html, body{
   transition: all 0.5s;
 }
 
-.right .btn:hover{
+.inner .btn:hover{
   color: #CBDFD6;
   border: solid #CBDFD6 2px;
 }
