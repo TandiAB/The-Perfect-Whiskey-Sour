@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.intro{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url("background.jpg") no-repeat 50% 50%;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.intro.inner{
+  float:left;
+  display: table;
+  vertical-align: top;
+  max-width: none;
+}
+
+ .inner{
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 28%;
+}
+
+.intro.left{
+  float: left;
+  display: table;
+  vertical-align: middle;
+  max-width: none;
+}
+
+ .left{
+   float: left;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 28%;
+}
+
+.intro.right{
+  float: left;
+  display: table;
+  vertical-align: middle;
+  max-width: none;
+}
+
+.right{
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 28%;
+}
+
+.inner h1{
+  font-family: 'Yantramanav', sans-serif;
+  font-size: 600%;
+  font-weight: 400;
+  color: #E1EFE9;
+}
+
+.inner h2{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url("whiskey.png");
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.left p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 135%;
+  font-weight: 400;
+  color: #3A6168;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+
+.right .btn{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 135%;
+  font-weight: 400;
+  color: #3A6168;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: solid #3A6168;
+  padding: 10px 20px;
+  border-radius: 9px;
+  transition: all 0.5s;
+}
+
+.right .btn:hover{
+  color: #CBDFD6;
+  border: solid #CBDFD6 2px;
+}
+
+
+/*--- Media Queries --*/
+@media screen and (max-width: 900px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
