@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
 body {
-  background: url(background.jpg) no-repeat 50% 50%;
+  /* background-image: linear-gradient(#fdfbfb, #ebedee); */
+  background-color: lightgrey;
+  /* background: url(background.jpg) no-repeat 50% 50%; */
   background-size: cover;
   display: grid;
   grid-template-areas:
@@ -23,12 +25,12 @@ body {
     font-size: 250%;
     font-weight: 550;
     color: #3A6168;
-    transition: all 0.5s;
   }
 
   #description:hover{
-    color: #CBDFD6;
-
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s;
   }
 
   #popup{
@@ -71,23 +73,24 @@ body {
     font-family: 'Yantramanav', sans-serif;
     font-size: 600%;
     font-weight: 500;
-    color: #E1EFE9;
+    color: #3A6168;
     text-align: center;
   }
 
   #topCenter:hover{
-    color: #CBDFD6;
     cursor: pointer;
+    transform: scale(1.1);
     font-weight: 800;
+    transition: all 0.2s;
   }
 
   #image{
     /* background-image: url("whi.png"), url("background.jpg"); */
   }
 
-  #image:hover{
+  #homeImage:hover{
     transform: scale(1.1);
-    transition: all 0.5s;
+    transition: all 0.2s;
   }
 
 
@@ -105,10 +108,10 @@ body {
     display: flex;
   }
 
-  #mixButton:hover{
+  /* #mixButton:hover{
     color: #CBDFD6;
     border: solid #CBDFD6 2px;
-  }
+  } */
 
   button{
     display: none;
@@ -121,24 +124,26 @@ body {
     border: solid #3A6168;
     padding: 10px 20px;
     border-radius: 9px;
-    transition: all 0.5s;
+    transition: all 0.2s;
     margin: auto;
     margin-top: 20px;
   }
-  ul {
+
+   button:hover, #mixButton:hover{
+    transform: scale(1.1);
+    font-size: 250%;
+    cursor: pointer;
+    border: solid 10px;
+    transition: all 0.2s;
+  }
+  /* ul {
     display: none;
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
     font-weight: 1000;
     padding: 20;
-  }
+  } */
 
-  #whiskeyButton:hover, #lemonButton:hover, #angosturaButton:hover,
-  #eggButton:hover, #iceBUtton:hover, #syrupButton:hover{
-    color: #CBDFD6;
-    /* border: solid #CBDFD6 2px; */
-    cursor: pointer;
-  }
 
 #topLeft {
   grid-area: topLeft;
@@ -245,7 +250,7 @@ body {
   }
 
   #beaker {
-    border: 10px solid grey;
+    border: 10px solid black;
     border-top: 10 solid;
     border-radius: 0 0 30px 30px;
     height: 300px;

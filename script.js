@@ -28,10 +28,10 @@ $( document ).ready(function() {
   var totalHeight = 0;
   var mixedColor;
 
-  $('#yesButton').click(function(){
-    console.log("YES BUTTON");
-    $(this).data('clicked', true);
-  });
+  // $('#yesButton').click(function(){
+  //   console.log("YES BUTTON");
+  //   $(this).data('clicked', true);
+  // });
 
   $("#whiskeyButton").click(function() {
     if(whiskeyAdded == true){
@@ -306,11 +306,16 @@ $( document ).ready(function() {
   });
 
   $("#serveButton").click(function(){
-    if(poured==true && angosturaAdded==true){
+    // if(poured==true && angosturaAdded==true){
       $('#homeImage').fadeOut();
+      $('#container').fadeOut();
       $('#congrats').delay(500).fadeIn();
       $('#congrats').delay(2000).fadeOut();
-    }
+      $('.ingredients').delay(500).fadeOut();
+      $('#shakeButton').delay(500).fadeOut();
+      $('#pourButton').delay(500).fadeOut();
+      $('#serveButton').delay(500).fadeOut();
+    // }
   });
 
 });
