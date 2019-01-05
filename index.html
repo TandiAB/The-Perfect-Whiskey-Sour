@@ -3,8 +3,12 @@
   <title>The Perfect Whiskey Sour</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
+  <script src="jqueryUI/jquery-ui.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
+
 	<link href="css/animate.css" rel="stylesheet"/>
 	<link href="css/waypoints.css" rel="stylesheet"/>
 	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
@@ -35,6 +39,12 @@
     <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
       <div id="homeImage"></div>
     </section>
+
+    <div id="popup">Are you really sure you want to do that?
+      <button id="yesButton" type="button">YES</button>
+      <button id="noButton" type="button">NO</button>
+    </div>
+    <div id="disgusting">That is disgusting!</div>
 </div>
 
   <div id="centerLeft">
@@ -61,7 +71,11 @@
 
   <div id="bottomLeft"></div>
 
-  <div id="bottomCenter"></div>
+  <div id="bottomCenter">
+    <button id="shakeButton" type="button">SHAKE</button>
+    <button id="pourButton" type="button">POUR</button>
+    <button id="serveButton" type="button">SERVE</button>
+  </div>
 
   <div id="bottomRight"></div>
 
