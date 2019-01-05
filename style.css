@@ -49,7 +49,7 @@ body {
   text-align: center;
   }
 
-  #disgusting{
+  #disgusting, #congrats{
     display: none;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
