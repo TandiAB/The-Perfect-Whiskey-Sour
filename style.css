@@ -12,12 +12,17 @@ body {
     "centerLeft centerCenter centerRight"
     "bottomLeft bottomCenter bottomRight";
   grid-template-rows: 20% 1fr 20%;
-  grid-template-columns: 20% 1fr 20%;
+  grid-template-columns: 30% 1fr 30%;
   grid-row-gap: 10px;
   grid-column-gap: 10px;
   height: 100vh;
   margin: 0;
   }
+
+  /* #topLeft, #topCenter, #topRight, #centerLeft, #centerCenter, #centerRight, #bottomLeft, #bottomCenter, #bottomRight{
+    width: 100%;
+    height: 100%;
+  } */
 
   #description{
     text-align: center;
@@ -48,31 +53,64 @@ body {
   border: 2px solid #fff;
   border-radius: 20px/50px;
   background-clip: padding-box;
-  text-align: center;
+  /* text-align: center; */
   }
+
+
+  #hint{
+    display: none;
+    text: "test";
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+    font-weight: 300;
+    color: #3A6168;
+    transition: all 0.5s;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+  }
+
+  .actions{
+    margin: 40px;
+  }
+
+  /* #shakeButton{
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  #pourButton{
+    margin-top: 0px;
+    margin-right: 10px;
+  } */
 
   #disgusting, #congrats{
     display: none;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 350%;
+    font-size: 300%;
     font-weight: 550;
     color: #3A6168;
     transition: all 0.5s;
     width: 40%;
     margin: 0 auto;
     background: rgba(255,255,255,0.2);
-    padding: 200px;
+    padding: 100px;
     border: 2px solid #fff;
     border-radius: 20px/50px;
     background-clip: padding-box;
-    text-align: center;
   }
 
   #topCenter{
     font-family: 'Yantramanav', sans-serif;
-    font-size: 600%;
-    font-weight: 500;
+    font-size: 450%;
+    font-weight: 600;
     color: #3A6168;
     text-align: center;
   }

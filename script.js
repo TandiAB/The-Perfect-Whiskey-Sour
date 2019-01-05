@@ -6,9 +6,7 @@ $( document ).ready(function() {
     $('#homeImage').fadeOut();
     $('.ingredients').delay(500).fadeIn();
     $('#container').delay(500).fadeIn();
-    $('#shakeButton').delay(500).fadeIn();
-    $('#pourButton').delay(500).fadeIn();
-    $('#serveButton').delay(500).fadeIn();
+    $('.actions').delay(500).fadeIn().css("display","inline-block");
   });
 
   $('#topCenter').click(function() {
@@ -24,6 +22,7 @@ $( document ).ready(function() {
   var poured = false;
   var dryShaked = false;
   var shaked = false;
+  var hintsActivated = false
 
   var totalHeight = 0;
   var mixedColor;
@@ -35,7 +34,13 @@ $( document ).ready(function() {
 
   $("#whiskeyButton").click(function() {
     if(whiskeyAdded == true){
+      if(poured == false){
+        $('#hint').text("HINT! Maybe it is not the best idea to add more whiskey!");
+        $('#hint').fadeIn();
+      }
       if(poured==true){
+        $('#hint').text("HINT! Not a good idea to add whiskey after pouring the drink!");
+        $('#hint').fadeIn();
         $('#homeImage').fadeOut();
       }
       else{
@@ -46,6 +51,7 @@ $( document ).ready(function() {
       $('#noButton').delay(500).fadeIn();
 
       $('#noButton').click(function(){
+        $('#hint').fadeOut();
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
@@ -58,6 +64,7 @@ $( document ).ready(function() {
       });
 
       $('#yesButton').click(function(){
+        $('#hint').fadeOut();
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
@@ -77,7 +84,13 @@ $( document ).ready(function() {
 
   $("#lemonButton").click(function() {
     if(lemonAdded == true){
+      if(poured == false){
+        $('#hint').text("HINT! Maybe it is not the best idea to add more lemon juice!");
+        $('#hint').fadeIn();
+      }
       if(poured==true){
+        $('#hint').text("HINT! Not a good idea to add lemon juice after pouring the drink!");
+        $('#hint').fadeIn();
         $('#homeImage').fadeOut();
       }
       else{
@@ -88,6 +101,7 @@ $( document ).ready(function() {
       $('#noButton').delay(500).fadeIn();
 
       $('#noButton').click(function(){
+        $('#hint').fadeOut();
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
@@ -100,6 +114,7 @@ $( document ).ready(function() {
       });
 
       $('#yesButton').click(function(){
+        $('#hint').fadeOut();
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
@@ -119,6 +134,8 @@ $( document ).ready(function() {
 
   $("#angosturaButton").click(function() {
     if(poured == false){
+      $('#hint').text("HINT! Angostura should not be mixed into the drink! Use it to top your masterpiece off!");
+      $('#hint').fadeIn();
       if(poured==true){
         $('#homeImage').fadeOut();
       }
@@ -203,8 +220,12 @@ $( document ).ready(function() {
   });
 
   $("#iceBUtton").click(function() {
-    if(iceAdded == true){
+    if(iceAdded == false && dryShaked==false){
+      $('#hint').text("HINT! Remeber to dry shake all the ingredients before you add ice!");
+      $('#hint').fadeIn();
       if(poured==true){
+        $('#hint').text("HINT! Not a good idea to add ice afterhand!");
+        $('#hint').fadeIn();
         $('#homeImage').fadeOut();
       }
       else{
@@ -215,6 +236,7 @@ $( document ).ready(function() {
       $('#noButton').delay(500).fadeIn();
 
       $('#noButton').click(function(){
+        $('#hint').fadeOut();
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
@@ -227,6 +249,7 @@ $( document ).ready(function() {
       });
 
       $('#yesButton').click(function(){
+        $('#hint').fadeOut();
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
@@ -278,7 +301,7 @@ $( document ).ready(function() {
 
     }
     else{
-      $('.pour6').css("background-color", "lightgrey");
+      $('.pour6').css("background-color", "darkgrey");
       $('.pour6').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
       $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 20 + "px"}, 2500);
       totalHeight = totalHeight + 20;
@@ -316,6 +339,7 @@ $( document ).ready(function() {
       $('#pourButton').delay(500).fadeOut();
       $('#serveButton').delay(500).fadeOut();
     // }
+      $('.information').delay(4000).fadeIn();
   });
 
 });
