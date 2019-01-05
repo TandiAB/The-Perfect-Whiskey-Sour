@@ -231,6 +231,16 @@ body {
     background: url("whi.png") no-repeat center;
   }
 
+  #sourImage {
+    display: none;
+    height: 731px;
+    width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: url("sour.jpeg") no-repeat center;
+  }
+
   #container div { position: absolute; }
 
   .pour {

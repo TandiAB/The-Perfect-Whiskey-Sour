@@ -340,6 +340,8 @@ $( document ).ready(function() {
       $('#serveButton').delay(500).fadeOut();
     // }
       $('.information').delay(4000).fadeIn();
+      // $('#sourImage').delay(4000).fadeIn();
+      //$('body').css('background-image', 'url(drink.jpeg)');
   });
 
 });
