@@ -1,6 +1,23 @@
 $( document ).ready(function() {
+  var audio = document.getElementsByTagName("audio")[0];
+
+
+  // Handles the mute/unmute function of the background music
+  $('#volume').data("muted", false);
+  var muted = false;
+  $('#volume').click(function() {
+    if(muted == false){
+      audio.pause();
+      muted = true;
+    }
+    else{
+      audio.play();
+      muted = false;
+    }
+  });
 
   $("#mixButton").click(function() {
+    audio.play();
     $('#description').fadeOut();
     $('#mixButton').fadeOut();
     $('#homeImage').fadeOut();
@@ -12,6 +29,18 @@ $( document ).ready(function() {
   $('#topCenter').click(function() {
     location.reload();
   });
+
+  $('button').easyAudioEffects({
+    mp3 : "audio/beep.mp3"
+  });
+
+  $('button').easyAudioEffects({
+    mp3 : "audio/click.mp3",
+    eventType: 'click'
+  });
+
+
+
 
   var whiskeyAdded = false;
   var lemonAdded = false;

@@ -16,9 +16,16 @@
 </head>
 <body>
 
+  <audio preload loop>
+	<source id="song" src="audio/song.mp3" type="audio/mpeg"></source>
+	Your browser isn't invited for super fun audio time.
+  </audio>
+
   <div id="topLeft"></div>
 
-  <div id="topRight"></div>
+  <div id="topRight">
+    <button id="volume"></button>
+  </div>
 
   <div id="topCenter">
     The Perfect Whiskey Sour
@@ -57,8 +64,8 @@
     <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".7s">
         <p id="description">This is a website that will get you through the process of making the perfect whiskey sour. </p>
     </section>
-      <button class="ingredients" id="whiskeyButton" type="button">Whiskey</button>
-      <button class="ingredients" id="lemonButton" type="button">Lemon juice</button>
+      <button class="ingredients" id="whiskeyButton" type="button">Whiskey 5cl</button>
+      <button class="ingredients" id="lemonButton" type="button">Lemon juice 3cl</button>
       <button class="ingredients" id="angosturaButton" type="button">Angostura</button>
 
       <button class="information" id="historyButton" type="button">History</button>
@@ -71,9 +78,9 @@
     <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".7s">
       <a id="mixButton" href="#">LET'S MIX</a>
     </section>
-      <button class="ingredients" id="eggButton" type="button">Eggwhite</button>
-      <button class="ingredients" id="iceBUtton"type="button">Ice</button>
-      <button class="ingredients" id="syrupButton" type="button">Simple syrup</button>
+      <button class="ingredients" id="eggButton" type="button">Eggwhite 1/2</button>
+      <button class="ingredients" id="iceBUtton"type="button">Ice cubes</button>
+      <button class="ingredients" id="syrupButton" type="button">Simple syrup 2.5cl</button>
 
       <button class="information" id="recepieButton" type="button">Recipe</button>
       <button class="information" id="triviaButton" type="button">Trivia</button>
@@ -92,6 +99,9 @@
 
   <div id="bottomRight">
   </div>
+
+<script src="easyaudioeffects/jquery.easyaudioeffects.1.0.0.min.js"></script>
+<script src="easyaudioeffects/jquery.easyaudioeffects.1.0.0.js"></script>
 
 </body>
 </html>
