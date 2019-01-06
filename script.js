@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+  $("#demo01").animatedModal();
+
   var audio = document.getElementsByTagName("audio")[0];
 
 
@@ -371,6 +373,28 @@ $( document ).ready(function() {
       $('.information').delay(4000).fadeIn();
       // $('#sourImage').delay(4000).fadeIn();
       //$('body').css('background-image', 'url(drink.jpeg)');
+  });
+
+  $("#recipeButton").click(function(){
+    $("#demo01").animatedModal({
+        animatedIn:'bounce',
+        animatedOut:'hinge',
+        color: '#3A6168',
+        // Callbacks
+        beforeOpen: function() {
+            console.log("The animation was called");
+        },
+        afterOpen: function() {
+            console.log("The animation is completed");
+        },
+        beforeClose: function() {
+            console.log("The animation was called");
+        },
+        afterClose: function() {
+            console.log("The animation is completed");
+        }
+    });
+    $("#demo01").click();
   });
 
 });

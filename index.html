@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <head>
   <title>The Perfect Whiskey Sour</title>
+
+  <!-- Includes jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <!-- Includes jqueryUI -->
   <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
   <script src="jqueryUI/jquery-ui.js"></script>
 
+  <!-- Includes my own css and script -->
 	<link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
 
@@ -13,6 +18,15 @@
 	<link href="css/waypoints.css" rel="stylesheet"/>
 	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
 	<script src="js/waypoints.js" type="text/javascript"></script>
+
+  <!-- Audio effects plugin -->
+  <script src="easyaudioeffects/jquery.easyaudioeffects.1.0.0.min.js"></script>
+  <script src="easyaudioeffects/jquery.easyaudioeffects.1.0.0.js"></script>
+
+  <!-- Modal -->
+  <link rel="stylesheet" href="modal/demo/css/animate.min.css">
+  <script src="modal/animatedModal.js"></script>
+
 </head>
 <body>
 
@@ -43,6 +57,7 @@
         <div id="liquid"></div>
       </div>
     </div>
+
     <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
       <div id="homeImage"></div>
     </section>
@@ -50,6 +65,26 @@
     <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
       <div id="sourImage"></div>
     </section>
+
+    <!-- <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
+      <div id="recipeInfo"></div>
+    </section> -->
+
+    <!--Call your modal-->
+   <a id="demo01" href="#animatedModal">DEMO01</a>
+
+    <!--DEMO01-->
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal">
+            CLOSE MODAL
+        </div>
+
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+        </div>
+    </div>
+
 
     <div id="popup">Are you really sure you want to do that?
       <button id="yesButton" type="button">YES</button>
@@ -66,7 +101,7 @@
     </section>
       <button class="ingredients" id="whiskeyButton" type="button">Whiskey 5cl</button>
       <button class="ingredients" id="lemonButton" type="button">Lemon juice 3cl</button>
-      <button class="ingredients" id="angosturaButton" type="button">Angostura</button>
+      <button class="ingredients" id="angosturaButton" type="button">Angostura dash</button>
 
       <button class="information" id="historyButton" type="button">History</button>
       <button class="information" id="tasteButton" type="button">Taste</button>
@@ -82,7 +117,7 @@
       <button class="ingredients" id="iceBUtton"type="button">Ice cubes</button>
       <button class="ingredients" id="syrupButton" type="button">Simple syrup 2.5cl</button>
 
-      <button class="information" id="recepieButton" type="button">Recipe</button>
+      <button class="information" id="recipeButton" type="button">Recipe</button>
       <button class="information" id="triviaButton" type="button">Trivia</button>
       <button class="information" id="garnishButton" type="button">Garnishes</button>
 
@@ -100,8 +135,6 @@
   <div id="bottomRight">
   </div>
 
-<script src="easyaudioeffects/jquery.easyaudioeffects.1.0.0.min.js"></script>
-<script src="easyaudioeffects/jquery.easyaudioeffects.1.0.0.js"></script>
 
 </body>
 </html>

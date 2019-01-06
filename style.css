@@ -24,6 +24,10 @@ body {
     height: 100%;
   } */
 
+  #demo01{
+    display: none;
+  }
+
   #description{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -71,6 +75,23 @@ body {
     margin-top: 100px;
     background: rgba(255,255,255,0.2);
     padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+  }
+
+  #recipeInfo{
+    display: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 250%;
+    font-weight: 550;
+    color: #3A6168;
+    transition: all 0.5s;
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
     border: 2px solid #fff;
     border-radius: 20px/50px;
     background-clip: padding-box;
