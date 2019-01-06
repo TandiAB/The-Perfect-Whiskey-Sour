@@ -55,7 +55,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 250%;
   font-weight: 550;
-  color: #3A6168;
+  color: white;
   transition: all 0.5s;
   width: 40%;
   margin: 0 auto;
@@ -75,7 +75,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
     font-weight: 300;
-    color: #3A6168;
+    color: white;
     transition: all 0.5s;
     width: 90%;
     margin: 0 auto;
@@ -124,7 +124,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 300%;
     font-weight: 550;
-    color: #3A6168;
+    color: white;
     transition: all 0.5s;
     width: 40%;
     margin: 0 auto;
@@ -194,7 +194,7 @@ body {
     text-decoration: none;
     /* border: solid white; */
     padding: 10px 20px;
-    /* border-radius: 9px; */
+    border-radius: 9px;
     transition: all 0.2s;
     margin: auto;
     margin-top: 20px;
