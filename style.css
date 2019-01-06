@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
+html, body {
+  margin: 0; height: 100%;
+  overflow: hidden
+}
+
+
 body {
   /* background-image: linear-gradient(#fdfbfb, #ebedee); */
-  background-color: lightgrey;
-  /* background: url(background.jpg) no-repeat 50% 50%; */
+  /* background-color: lightgrey; */
+  background: url(images/tea.jpg);
   background-size: cover;
   display: grid;
   grid-template-areas:
@@ -32,8 +38,9 @@ body {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 250%;
-    font-weight: 550;
-    color: #3A6168;
+    font-weight: 1;
+    color: white;
+    margin-right: 20px;
   }
 
   #description:hover{
@@ -111,7 +118,7 @@ body {
     margin-right: 10px;
   } */
 
-  #disgusting, #congrats{
+  #disgusting{
     display: none;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -128,12 +135,15 @@ body {
     background-clip: padding-box;
   }
 
+
+
   #topCenter{
     font-family: 'Yantramanav', sans-serif;
     font-size: 450%;
-    font-weight: 600;
-    color: #3A6168;
+    font-weight: 500;
+    color: white;
     text-align: center;
+    margin-top: 10px;
   }
 
   #topCenter:hover{
@@ -156,15 +166,15 @@ body {
   #mixButton{
     font-family: 'Montserrat', sans-serif;
     font-size: 300%;
-    font-weight: 550;
-    color: #3A6168;
+    font-weight: 500;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
-    border: solid #3A6168;
+    border: solid white;
     padding: 10px 20px;
     border-radius: 9px;
     transition: all 0.5s;
-    display: flex;
+    margin-right: 1px;
   }
 
   /* #mixButton:hover{
@@ -174,15 +184,17 @@ body {
 
   button{
     display: none;
+    border: none;
+    background-color: Transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
-    font-weight: 550;
-    color: #3A6168;
+    font-weight: 500;
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
-    border: solid #3A6168;
+    /* border: solid white; */
     padding: 10px 20px;
-    border-radius: 9px;
+    /* border-radius: 9px; */
     transition: all 0.2s;
     margin: auto;
     margin-top: 20px;
@@ -252,7 +264,7 @@ body {
   }
 
   #homeImage {
-    display: block;
+    display: none;
     height: 731px;
     width: 750px;
     margin: 0 auto;
@@ -375,9 +387,44 @@ body {
   } */
 
 #animatedModal{
-  background: url(drink.jpeg) no-repeat 80% 80%;
+  background-image: url() no-repeat;
   display: block;
   background-size: auto;
+}
+#modalText{
+  display: block;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+  font-weight: 100;
+  width: 500px;
+  color: white;
+  padding: 100px;
+  line-height: 40px;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+#sourRecipe{
+  display: none;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150%;
+  font-weight: 100;
+  width: 500px;
+  color: white;
+  padding: 100px;
+  line-height: 40px;
+}
+
+#congrats{
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 250%;
+  font-weight: 300;
+  color: white;
+  width: 750px;
+  margin-top: 100px;
 }
 
 /* Stack the layout on small devices/viewports. */

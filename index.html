@@ -60,13 +60,13 @@
       </div>
     </div>
 
-    <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
+    <!-- <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
       <div id="homeImage"></div>
-    </section>
+    </section> -->
 
-    <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
+    <!-- <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
       <div id="sourImage"></div>
-    </section>
+    </section> -->
 
     <!-- <section class="os-animation" data-os-animation="bounceInUp" data-os-animation-delay=".5s">
       <div id="recipeInfo"></div>
@@ -79,12 +79,26 @@
     <div id="animatedModal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
         <div class="close-animatedModal">
-          
         </div>
 
         <div class="modal-content">
           <!--Your modal content goes here-->
-          <div id="modalImage"></div>
+          <!-- <p id="modalText"> This is the best whiskey sour recipe ever!</p> -->
+          <span id="modalText">'+dialog_title+'</span>
+
+          <ul id="sourRecipe">
+            <li>Take an empty coupe glass, fill it with ice and put it aside.</li>
+            <li>Add 5cl of whiskey into the shaker.</li>
+            <li>Add 3cl of freshly squeezed lemon juice into the shaker.</li>
+            <li>Add 2.5cl of symple syrup into the shaker.</li>
+            <li>Add half an egg white into the shaker.</li>
+            <li>Now dryshake everything without ice and build up a foam.</li>
+            <li>Add some ice cubes to the shaker and shake vigorously.</li>
+            <li>Take the coupe glass and empty it.</li>
+            <li>Use a hawthorne strainer to pour the content of the shaker into the chilled glass.</li>
+            <li>Now for the final touch dash some drops of angostura on the foam of the cocktail</li>
+            <li>Serve!</li>
+          </ul>
 
         </div>
     </div>
@@ -109,7 +123,7 @@
 
       <button class="information" id="historyButton" type="button">History</button>
       <button class="information" id="tasteButton" type="button">Taste</button>
-      <button class="information" id="galleryButton" type="button">Gallery</button>
+      <!-- <button class="information" id="galleryButton" type="button">Gallery</button> -->
 
   </div>
 
@@ -123,7 +137,7 @@
 
       <button class="information" id="recipeButton" type="button">Recipe</button>
       <button class="information" id="triviaButton" type="button">Trivia</button>
-      <button class="information" id="garnishButton" type="button">Garnishes</button>
+      <!-- <button class="information" id="garnishButton" type="button">Garnishes</button> -->
 
       <span id="hint">'+dialog_title+'</span>
   </div>

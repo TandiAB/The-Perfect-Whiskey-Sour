@@ -20,6 +20,8 @@ $( document ).ready(function() {
 
   $("#mixButton").click(function() {
     audio.play();
+    // $('body').css("background", "linear-gradient(#374150, #171b20)");
+    $('#description').fadeOut();
     $('#description').fadeOut();
     $('#mixButton').fadeOut();
     $('#homeImage').fadeOut();
@@ -368,36 +370,86 @@ $( document ).ready(function() {
       $('#pourButton').fadeOut();
       $('#serveButton').fadeOut();
       $('#congrats').delay(500).fadeIn();
-      $('#congrats').delay(1000).fadeOut();
+      $('#congrats').delay(2000).fadeOut();
     // }
-      $('.information').delay(2500).fadeIn();
-      // $('#sourImage').delay(4000).fadeIn();
-      //$('body').css('background-image', 'url(drink.jpeg)');
+      // $('.information').delay(2500).fadeIn();
+      $('body').css("background", "url(images/tea.jpg)");
+
+    //   setTimeout(function () {
+    //   $('body').css("background", "url(images/tea.jpg)");
+    // }, 3500);
+      $('.information').delay(3000).fadeIn();
+
+      // $("body").stop().animate({opacity: 0},1000,function(){
+      //     $(this).css({'background': "url('images/final.jpg')"})
+      //          .animate({opacity: 1},{duration:5000});
+      //     });
   });
 
 
-  $(".information").click(function(){
+  $("#historyButton").click(function(){
+    $('#modalText').css("display", "block");
+    $('#sourRecipe').css("display", "none");
+    $('#modalText').css("margin-left", "0px");
+    $('#modalText').css("margin-top", "0px");
+    $('#animatedModal').css("background", "url(images/history.jpg)");
+    $('#modalText').text("The year: 1792. You: a sailor crossing the Atlantic for North America. Food is dried. Water is no good. And scurvy is a constant worry. Enter, the Whiskey Sour! No, really. Although the recipe was not written down until 1862 by Jerry Thomas in The Bartenders Guide, sours were a basic recipe for centuries. According to Brian Petro of The Alcohol Professor, Vice Admiral Edward Vernon of England began mixing a few ingredients together to serve to his crew, to help combat sea-sickness, malnutrition, and scurvy. But because they didn't want an entire ship of intoxicated sailors, they began to water it down with lemon or lime juice. While the British used Gin and Brandy, Americans favored Whiskey, and thus the Whiskey Sour was born.");
     $("#demo01").animatedModal({
-        // animatedIn:'wobble',
-        // animatedOut:'hinge',
-        color: '#3A6168',
-        // Callbacks
-        beforeOpen: function() {
-            console.log("The animation was called");
-        },
-        afterOpen: function() {
-            console.log("The animation is completed");
-        },
-        beforeClose: function() {
-            console.log("The animation was called");
-        },
-        afterClose: function() {
-            console.log("The animation is completed");
-        }
     });
     $("#demo01").click();
+  });
 
+  $("#tasteButton").click(function(){
+    $('#modalText').css("display", "block");
+    $('#sourRecipe').css("display", "none");
+    $('#animatedModal').css("background", "url(images/turkey.jpg)");
+    $('#modalText').css("margin-left", "1200px");
+    $('#modalText').css("margin-top", "100px");
+    $('#modalText').text("The Whiskey Sour is all about flavor balance. The drink is very simple, just a spirit, some fresh lemon juice, sugar and water. Too much lemon is just plain harsh. Too much sugar is cloying. Somewhere in between is a simple, tasty refresher. Like the Old Fashioned, it provides a welcome break from the flavor complexities of more sophisticated cocktails. The idea of the drink is to use just enough lemon to make a counterpoint to the whiskey, and just enough sugar to take the edge off the lemon. You don't want to bury the lemon altogether. The drink is a sour, after all.");
+    $("#demo01").animatedModal({
+    });
+    $("#demo01").click();
+  });
 
+  $("#galleryButton").click(function(){
+    $('#modalText').css("display", "block");
+    $('#sourRecipe').css("display", "none");
+    $('#animatedModal').css("background", "url(whiskey.png)");
+    $('#modalText').text("HINT! Not a good idea to add whiskey after pouring the drink!");
+    $("#demo01").animatedModal({
+    });
+    $("#demo01").click();
+  });
+
+  $("#recipeButton").click(function(){
+    $('#animatedModal').css("background", "url(images/recipe.jpg)");
+    $('#modalText').css("display", "none");
+    $('#sourRecipe').css("display", "block");
+    $("#demo01").animatedModal({
+    });
+    $("#demo01").click();
+  });
+
+  $("#triviaButton").click(function(){
+    $('#modalText').css("display", "block");
+    $('#sourRecipe').css("display", "none");
+    $('#animatedModal').css("background", "url(images/national2.jpg)");
+    $('#modalText').css("margin-left", "1200px");
+    $('#modalText').css("margin-top", "100px");
+    $('#modalText').text("August 29th is National Whisky Sour Day. Despite that, the creator of this website feels entitled to drink one of these amazing cocktails every morning, as a way of making life just a little better. Judgy people, get out of my face!");
+    $("#demo01").animatedModal({
+    });
+    $("#demo01").click();
+  });
+
+  $("#garnishButton").click(function(){
+    $('#modalText').css("display", "block");
+    $('#sourRecipe').css("display", "none");
+    $('#animatedModal').css("background", "url(whiskey.png)");
+    $('#modalText').text("HINT! Not a good idea to add whiskey after pouring the drink!");
+    $("#demo01").animatedModal({
+    });
+    $("#demo01").click();
   });
 
   $("#animatedModal").click(function() {
