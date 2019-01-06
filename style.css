@@ -374,8 +374,11 @@ body {
     width: 110px;
   } */
 
-
-
+#animatedModal{
+  background: url(drink.jpeg) no-repeat 80% 80%;
+  display: block;
+  background-size: auto;
+}
 
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {

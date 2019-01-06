@@ -363,22 +363,23 @@ $( document ).ready(function() {
     // if(poured==true && angosturaAdded==true){
       $('#homeImage').fadeOut();
       $('#container').fadeOut();
+      $('.ingredients').fadeOut();
+      $('#shakeButton').fadeOut();
+      $('#pourButton').fadeOut();
+      $('#serveButton').fadeOut();
       $('#congrats').delay(500).fadeIn();
-      $('#congrats').delay(2000).fadeOut();
-      $('.ingredients').delay(500).fadeOut();
-      $('#shakeButton').delay(500).fadeOut();
-      $('#pourButton').delay(500).fadeOut();
-      $('#serveButton').delay(500).fadeOut();
+      $('#congrats').delay(1000).fadeOut();
     // }
-      $('.information').delay(4000).fadeIn();
+      $('.information').delay(2500).fadeIn();
       // $('#sourImage').delay(4000).fadeIn();
       //$('body').css('background-image', 'url(drink.jpeg)');
   });
 
-  $("#recipeButton").click(function(){
+
+  $(".information").click(function(){
     $("#demo01").animatedModal({
-        animatedIn:'bounce',
-        animatedOut:'hinge',
+        // animatedIn:'wobble',
+        // animatedOut:'hinge',
         color: '#3A6168',
         // Callbacks
         beforeOpen: function() {
@@ -395,6 +396,12 @@ $( document ).ready(function() {
         }
     });
     $("#demo01").click();
+
+
+  });
+
+  $("#animatedModal").click(function() {
+    $(".close-animatedModal").click();
   });
 
 });
