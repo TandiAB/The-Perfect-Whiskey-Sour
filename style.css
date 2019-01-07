@@ -103,10 +103,6 @@ body {
     border-radius: 20px/50px;
     background-clip: padding-box;
   }
-   #actions{
-     margin: 40px;
-     position: relative;
-  }
 
   #topCenter{
     font-family: 'Yantramanav', sans-serif;
@@ -165,11 +161,6 @@ body {
 
   }
 
-  #yesButton, #noButton{
-    display: inline-block;
-    font-size: 100%;
-  }
-
    button:hover, #mixButton:hover{
     transform: scale(1.1);
     font-size: 250%;
@@ -187,6 +178,19 @@ body {
     height: 48px;
     width: 48px;
   }
+
+  #shakeButton, #pourButton{
+    position: relative;
+    bottom: 10px;
+    left: -100px;
+    size: contain;
+ }
+ #serveButton{
+   position: relative;
+   bottom: 10px;
+   left: 230px;
+   size: contain;
+}
 
 #topLeft {
   grid-area: topLeft;
