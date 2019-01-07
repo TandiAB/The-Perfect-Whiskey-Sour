@@ -234,7 +234,7 @@ $( document ).ready(function() {
       $('#hint').fadeIn();
       $('#hint').delay(3000).fadeOut();
     }
-     // if(poured==true && angosturaAdded==true){
+     if(poured==true && angosturaAdded==true){
       audioApplause.play();
       $('#homeImage').fadeOut();
       $('#container').fadeOut();
@@ -247,7 +247,7 @@ $( document ).ready(function() {
       $('#congrats').delay(500).fadeIn();
       $('#congrats').delay(3000).fadeOut();
       $('.information').delay(6000).fadeIn('slow');
-     // }
+     }
   });
 
   $("#helpButton").click(function(){
