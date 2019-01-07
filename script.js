@@ -2,7 +2,15 @@ $( document ).ready(function() {
   $("#demo01").animatedModal();
 
   var audio = document.getElementsByTagName("audio")[0];
-
+  var audioPour = document.getElementsByTagName("audio")[1];
+  var audioEgg = document.getElementsByTagName("audio")[2];
+  var audioIce1 = document.getElementsByTagName("audio")[3];
+  var audioIce2 = document.getElementsByTagName("audio")[4];
+  var audioShake = document.getElementsByTagName("audio")[5];
+  var audioDryShake = document.getElementsByTagName("audio")[6];
+  var audioGlassPour = document.getElementsByTagName("audio")[7];
+  var audioDash = document.getElementsByTagName("audio")[8];
+  var audioApplause = document.getElementsByTagName("audio")[9];
 
   // Handles the mute/unmute function of the background music
   $('#volume').data("muted", false);
@@ -26,7 +34,7 @@ $( document ).ready(function() {
     $('#mixButton').fadeOut();
     $('#homeImage').fadeOut();
     $('.ingredients').delay(500).fadeIn();
-    $('#shaker').delay(500).fadeIn();
+    // $('#shaker').delay(500).fadeIn();
     // $('#container').delay(500).fadeIn();
     $('.actions').delay(500).fadeIn().css("display","inline-block");
   });
@@ -44,7 +52,10 @@ $( document ).ready(function() {
     eventType: 'click'
   });
 
-
+  // $('#fakeButton').easyAudioEffects({
+  //   mp3 : "audio/pour.mp3",
+  //   eventType: 'click'
+  // });
 
 
   var whiskeyAdded = false;
@@ -113,6 +124,10 @@ $( document ).ready(function() {
       // $('.pour').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
       // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 50 + "px"}, 2500);
       // totalHeight = totalHeight + 50;
+      console.log("whiskey added");
+      audioPour.play();
+      // $('#fakeButton').trigger('click');
+      // setTimeout(function(){ $('#fakeButton').click()}, 100);
       whiskeyAdded = true;
     }
   });
@@ -160,6 +175,7 @@ $( document ).ready(function() {
 
     }
     else{
+      audioPour.play();
       // $('.pour2').css("background-color", "yellow");
       // $('.pour2').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
       // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 30 + "px"}, 2500);
@@ -205,7 +221,7 @@ $( document ).ready(function() {
 
     }
     else{
-      console.log("Putting on angostura");
+      audioDash.play();
       // $('.pour3').css("background-color", "red");
       // $('.pour3').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
       // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 5 + "px"}, 2500);
@@ -249,6 +265,7 @@ $( document ).ready(function() {
 
     }
     else{
+      audioEgg.play();
       // $('.pour4').css("background-color", "white");
       // $('.pour4').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
       // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 20 + "px"}, 2500);
@@ -298,6 +315,10 @@ $( document ).ready(function() {
 
     }
     if (dryShaked==true){
+      audioIce2.play();
+      audioIce2.play();
+      audioIce2.play();
+      // audioIce1.play();
       // $('.pour5').css("background-color", "blue");
       // $('.pour5').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
       // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 50 + "px"}, 2500);
@@ -341,6 +362,7 @@ $( document ).ready(function() {
 
     }
     else{
+      audioPour.play();
       // $('.pour6').css("background-color", "darkgrey");
       // $('.pour6').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
       // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 20 + "px"}, 2500);
@@ -352,10 +374,12 @@ $( document ).ready(function() {
   $("#shakeButton").click(function() {
     if(whiskeyAdded==true && lemonAdded==true && eggAdded==true && syrupAdded==true && dryShaked==false){
       $('#container').effect("shake");
+      audioDryShake.play();
       dryShaked = true;
     }
     if(dryShaked == true && iceAdded==true){
       $('#container').effect("shake");
+      audioShake.play();
       shaked = true;
     }
   });
@@ -364,12 +388,14 @@ $( document ).ready(function() {
     if(shaked == true){
       $('#container').fadeOut();
       $('#homeImage').delay(500).fadeIn();
+      audioGlassPour.play();
       poured = true;
     }
   });
 
   $("#serveButton").click(function(){
     // if(poured==true && angosturaAdded==true){
+      audioApplause.play();
       $('#homeImage').fadeOut();
       $('#container').fadeOut();
       $('.ingredients').fadeOut();
@@ -378,7 +404,7 @@ $( document ).ready(function() {
       $('#serveButton').fadeOut();
       $('#shaker').fadeOut();
       $('#congrats').delay(500).fadeIn();
-      $('#congrats').delay(2000).fadeOut();
+      $('#congrats').delay(3000).fadeOut();
     // }
       // $('.information').delay(2500).fadeIn();
       // $('body').css("background", "url(images/tea.jpg)");
@@ -386,7 +412,7 @@ $( document ).ready(function() {
     //   setTimeout(function () {
     //   $('body').css("background", "url(images/tea.jpg)");
     // }, 3500);
-      $('.information').delay(3000).fadeIn();
+      $('.information').delay(6000).fadeIn('slow');
 
       // $("body").stop().animate({opacity: 0},1000,function(){
       //     $(this).css({'background': "url('images/final.jpg')"})
