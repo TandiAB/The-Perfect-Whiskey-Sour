@@ -18,10 +18,12 @@ $( document ).ready(function() {
   $('#volume').click(function() {
     if(muted == false){
       audio.pause();
+      $('#volume').css("background", "url(images/mute.ico)");
       muted = true;
     }
     else{
       audio.play();
+      $('#volume').css("background", "url(images/unmute.ico)");
       muted = false;
     }
   });
@@ -34,6 +36,7 @@ $( document ).ready(function() {
     $('#mixButton').fadeOut();
     $('#homeImage').fadeOut();
     $('.ingredients').delay(500).fadeIn();
+    $('#volume').delay(500).fadeIn();
     // $('#shaker').delay(500).fadeIn();
     // $('#container').delay(500).fadeIn();
     $('.actions').delay(500).fadeIn().css("display","inline-block");
@@ -82,41 +85,42 @@ $( document ).ready(function() {
       if(poured == false){
         $('#hint').text("HINT! Maybe it is not the best idea to add more whiskey!");
         $('#hint').fadeIn();
+        $('#hint').delay(3000).fadeOut();
       }
       if(poured==true){
         $('#hint').text("HINT! Not a good idea to add whiskey after pouring the drink!");
         $('#hint').fadeIn();
-        $('#homeImage').fadeOut();
+        $('#hint').delay(3000).fadeOut();
       }
       else{
-        $('#container').fadeOut();
+        // $('#container').fadeOut();
       }
-      $('#popup').delay(500).fadeIn();
-      $('#yesButton').delay(500).fadeIn();
-      $('#noButton').delay(500).fadeIn();
-
-      $('#noButton').click(function(){
-        $('#hint').fadeOut();
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        if(poured == true){
-          $('#homeImage').delay(500).fadeIn();
-        }
-        else{
-          $('#container').delay(500).fadeIn();
-        }
-      });
-
-      $('#yesButton').click(function(){
-        $('#hint').fadeOut();
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        $('#shaker').fadeOut();
-        $('#disgusting').delay(500).fadeIn();
-        setTimeout(location.reload.bind(location), 2000);
-      });
+      // $('#popup').delay(500).fadeIn();
+      // $('#yesButton').delay(500).fadeIn();
+      // $('#noButton').delay(500).fadeIn();
+      //
+      // $('#noButton').click(function(){
+      //   $('#hint').fadeOut();
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   if(poured == true){
+      //     $('#homeImage').delay(500).fadeIn();
+      //   }
+      //   else{
+      //     $('#container').delay(500).fadeIn();
+      //   }
+      // });
+      //
+      // $('#yesButton').click(function(){
+      //   $('#hint').fadeOut();
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   $('#shaker').fadeOut();
+      //   $('#disgusting').delay(500).fadeIn();
+      //   setTimeout(location.reload.bind(location), 2000);
+      // });
 
     }
     else{
@@ -137,41 +141,42 @@ $( document ).ready(function() {
       if(poured == false){
         $('#hint').text("HINT! Maybe it is not the best idea to add more lemon juice!");
         $('#hint').fadeIn();
+        $('#hint').delay(3000).fadeOut();
       }
       if(poured==true){
         $('#hint').text("HINT! Not a good idea to add lemon juice after pouring the drink!");
         $('#hint').fadeIn();
-        $('#homeImage').fadeOut();
+        $('#hint').delay(3000).fadeOut();
       }
       else{
-        $('#container').fadeOut();
+        // $('#container').fadeOut();
       }
-      $('#popup').delay(500).fadeIn();
-      $('#yesButton').delay(500).fadeIn();
-      $('#noButton').delay(500).fadeIn();
-
-      $('#noButton').click(function(){
-        $('#hint').fadeOut();
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        if(poured == true){
-          $('#homeImage').delay(500).fadeIn();
-        }
-        else{
-          $('#container').delay(500).fadeIn();
-        }
-      });
-
-      $('#yesButton').click(function(){
-        $('#hint').fadeOut();
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        $('#shaker').fadeOut();
-        $('#disgusting').delay(500).fadeIn();
-        setTimeout(location.reload.bind(location), 2000);
-      });
+      // $('#popup').delay(500).fadeIn();
+      // $('#yesButton').delay(500).fadeIn();
+      // $('#noButton').delay(500).fadeIn();
+      //
+      // $('#noButton').click(function(){
+      //   $('#hint').fadeOut();
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   if(poured == true){
+      //     $('#homeImage').delay(500).fadeIn();
+      //   }
+      //   else{
+      //     $('#container').delay(500).fadeIn();
+      //   }
+      // });
+      //
+      // $('#yesButton').click(function(){
+      //   $('#hint').fadeOut();
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   $('#shaker').fadeOut();
+      //   $('#disgusting').delay(500).fadeIn();
+      //   setTimeout(location.reload.bind(location), 2000);
+      // });
 
     }
     else{
@@ -188,36 +193,38 @@ $( document ).ready(function() {
     if(poured == false){
       $('#hint').text("HINT! Angostura should not be mixed into the drink! Use it to top your masterpiece off!");
       $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
       if(poured==true){
-        $('#homeImage').fadeOut();
+        // $('#homeImage').fadeOut();
       }
       else{
-        $('#container').fadeOut();
+        // $('#container').fadeOut();
       }
-      $('#popup').delay(500).fadeIn();
-      $('#yesButton').delay(500).fadeIn();
-      $('#noButton').delay(500).fadeIn();
-
-      $('#noButton').click(function(){
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        if(poured == true){
-          $('#homeImage').delay(500).fadeIn();
-        }
-        else{
-          $('#container').delay(500).fadeIn();
-        }
-      });
-
-      $('#yesButton').click(function(){
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        $('#shaker').fadeOut();
-        $('#disgusting').delay(500).fadeIn();
-        setTimeout(location.reload.bind(location), 2000);
-      });
+      // $('#popup').delay(500).fadeIn();
+      // $('#yesButton').delay(500).fadeIn();
+      // $('#noButton').delay(500).fadeIn();
+      //
+      // $('#noButton').click(function(){
+      //   $('#hint').fadeOut();
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   if(poured == true){
+      //     $('#homeImage').delay(500).fadeIn();
+      //   }
+      //   else{
+      //     $('#container').delay(500).fadeIn();
+      //   }
+      // });
+      //
+      // $('#yesButton').click(function(){
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   $('#shaker').fadeOut();
+      //   $('#disgusting').delay(500).fadeIn();
+      //   setTimeout(location.reload.bind(location), 2000);
+      // });
 
     }
     else{
@@ -232,36 +239,42 @@ $( document ).ready(function() {
 
   $("#eggButton").click(function() {
     if(eggAdded == true){
+      $('#hint').text("HINT! Let's calm down with the eggs. You are not trying to make breakfast!");
+      $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
       if(poured==true){
-        $('#homeImage').fadeOut();
+        $('#hint').text("HINT! Don't just put raw eggwhite in a poured drink!");
+        $('#hint').fadeIn();
+        $('#hint').delay(3000).fadeOut();
       }
       else{
-        $('#container').fadeOut();
+        // $('#container').fadeOut();
       }
-      $('#popup').delay(500).fadeIn();
-      $('#yesButton').delay(500).fadeIn();
-      $('#noButton').delay(500).fadeIn();
-
-      $('#noButton').click(function(){
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        if(poured == true){
-          $('#homeImage').delay(500).fadeIn();
-        }
-        else{
-          $('#container').delay(500).fadeIn();
-        }
-      });
-
-      $('#yesButton').click(function(){
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        $('#shaker').fadeOut();
-        $('#disgusting').delay(500).fadeIn();
-        setTimeout(location.reload.bind(location), 2000);
-      });
+      // $('#popup').delay(500).fadeIn();
+      // $('#yesButton').delay(500).fadeIn();
+      // $('#noButton').delay(500).fadeIn();
+      //
+      // $('#noButton').click(function(){
+      //   $('#popup').fadeOut();
+      //   $('#hint').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   if(poured == true){
+      //     $('#homeImage').delay(500).fadeIn();
+      //   }
+      //   else{
+      //     $('#container').delay(500).fadeIn();
+      //   }
+      // });
+      //
+      // $('#yesButton').click(function(){
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   $('#shaker').fadeOut();
+      //   $('#disgusting').delay(500).fadeIn();
+      //   setTimeout(location.reload.bind(location), 2000);
+      // });
 
     }
     else{
@@ -275,46 +288,58 @@ $( document ).ready(function() {
   });
 
   $("#iceBUtton").click(function() {
-    if(iceAdded == false && dryShaked==false){
-      $('#hint').text("HINT! Remeber to dry shake all the ingredients before you add ice!");
+    if(iceAdded==true){
+      $('#hint').text("HINT! You have already added ice! Add too much and you will water down the drink!");
       $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
+    }
+    if(dryShaked==false || iceAdded==true){
+      if(dryShaked == false){
+        $('#hint').text("HINT! Remeber to dry shake all the ingredients before you add ice!");
+        $('#hint').fadeIn();
+        $('#hint').delay(3000).fadeOut();
+        console.log(dryShaked);
+        console.log(shaked);
+      }
       if(poured==true){
         $('#hint').text("HINT! Not a good idea to add ice afterhand!");
+        console.log(dryShaked);
+        console.log(shaked);
         $('#hint').fadeIn();
-        $('#homeImage').fadeOut();
+        $('#hint').delay(3000).fadeOut();
       }
       else{
-        $('#container').fadeOut();
+        // $('#container').fadeOut();
       }
-      $('#popup').delay(500).fadeIn();
-      $('#yesButton').delay(500).fadeIn();
-      $('#noButton').delay(500).fadeIn();
-
-      $('#noButton').click(function(){
-        $('#hint').fadeOut();
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        if(poured == true){
-          $('#homeImage').delay(500).fadeIn();
-        }
-        else{
-          $('#container').delay(500).fadeIn();
-        }
-      });
-
-      $('#yesButton').click(function(){
-        $('#hint').fadeOut();
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        $('#shaker').fadeOut();
-        $('#disgusting').delay(500).fadeIn();
-        setTimeout(location.reload.bind(location), 2000);
-      });
+      // $('#popup').delay(500).fadeIn();
+      // $('#yesButton').delay(500).fadeIn();
+      // $('#noButton').delay(500).fadeIn();
+      //
+      // $('#noButton').click(function(){
+      //   $('#hint').fadeOut();
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   if(poured == true){
+      //     $('#homeImage').delay(500).fadeIn();
+      //   }
+      //   else{
+      //     $('#container').delay(500).fadeIn();
+      //   }
+      // });
+      //
+      // $('#yesButton').click(function(){
+      //   $('#hint').fadeOut();
+      //   $('#popup').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   $('#shaker').fadeOut();
+      //   $('#disgusting').delay(500).fadeIn();
+      //   setTimeout(location.reload.bind(location), 2000);
+      // });
 
     }
-    if (dryShaked==true){
+    if (dryShaked==true && iceAdded==false){
       audioIce2.play();
       audioIce2.play();
       audioIce2.play();
@@ -329,36 +354,44 @@ $( document ).ready(function() {
 
   $("#syrupButton").click(function() {
     if(syrupAdded == true){
+      $('#hint').text("HINT! Let's calm down with the sugar, are you trying to get diabetes?");
+      $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
       if(poured==true){
-        $('#homeImage').fadeOut();
+        // $('#homeImage').fadeOut();
+        $('#hint').text("HINT! Are you trying to top the drink with symple syrup, really?");
+        $('#hint').fadeIn();
+        $('#hint').delay(3000).fadeOut();
       }
       else{
-        $('#container').fadeOut();
+        // $('#container').fadeOut();
       }
-      $('#popup').delay(500).fadeIn();
-      $('#yesButton').delay(500).fadeIn();
-      $('#noButton').delay(500).fadeIn();
-
-      $('#noButton').click(function(){
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        if(poured == true){
-          $('#homeImage').delay(500).fadeIn();
-        }
-        else{
-          $('#container').delay(500).fadeIn();
-        }
-      });
-
-      $('#yesButton').click(function(){
-        $('#popup').fadeOut();
-        $('#yesButton').fadeOut();
-        $('#noButton').fadeOut();
-        $('#shaker').fadeOut();
-        $('#disgusting').delay(500).fadeIn();
-        setTimeout(location.reload.bind(location), 2000);
-      });
+      // $('#popup').delay(500).fadeIn();
+      // $('#yesButton').delay(500).fadeIn();
+      // $('#noButton').delay(500).fadeIn();
+      //
+      // $('#noButton').click(function(){
+      //   $('#popup').fadeOut();
+      //   $('#hint').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   if(poured == true){
+      //     $('#homeImage').delay(500).fadeIn();
+      //   }
+      //   else{
+      //     $('#container').delay(500).fadeIn();
+      //   }
+      // });
+      //
+      // $('#yesButton').click(function(){
+      //   $('#popup').fadeOut();
+      //   $('#hint').fadeOut();
+      //   $('#yesButton').fadeOut();
+      //   $('#noButton').fadeOut();
+      //   $('#shaker').fadeOut();
+      //   $('#disgusting').delay(500).fadeIn();
+      //   setTimeout(location.reload.bind(location), 2000);
+      // });
 
     }
     else{
@@ -372,20 +405,35 @@ $( document ).ready(function() {
   });
 
   $("#shakeButton").click(function() {
-    if(whiskeyAdded==true && lemonAdded==true && eggAdded==true && syrupAdded==true && dryShaked==false){
-      $('#container').effect("shake");
+    if(poured==true){
+      $('#hint').text("HINT! What are you trying to shake? Your shaker is empty!");
+      $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
+    }
+    if(whiskeyAdded==false && lemonAdded==false && eggAdded==false && syrupAdded==false && dryShaked==false){
+      $('#hint').text("HINT! What are you trying to shake? Your shaker is empty!");
+      $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
+    }
+    if(whiskeyAdded==true && lemonAdded==true && eggAdded==true && syrupAdded==true && dryShaked==false && poured==false){
       audioDryShake.play();
+      $("body").effect( "shake", {times:18, distance:80, direction:"left"}, 3000 );
       dryShaked = true;
     }
-    if(dryShaked == true && iceAdded==true){
-      $('#container').effect("shake");
+    if(dryShaked == true && iceAdded==true && poured==false){
       audioShake.play();
+      $("body").effect( "shake", {times:46, distance:80, direction:"left"}, 7800 );
       shaked = true;
     }
   });
 
   $("#pourButton").click(function(){
-    if(shaked == true){
+    if(poured==true){
+      $('#hint').text("HINT! What are you trying to pour? Your shaker is empty!");
+      $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
+    }
+    if(shaked == true && poured==false){
       $('#container').fadeOut();
       $('#homeImage').delay(500).fadeIn();
       audioGlassPour.play();
@@ -394,6 +442,16 @@ $( document ).ready(function() {
   });
 
   $("#serveButton").click(function(){
+    if(poured==false){
+      $('#hint').text("HINT! Come on! You're not nearly ready to serve!");
+      $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
+    }
+    if(angosturaAdded==false && poured==true){
+      $('#hint').text("HINT! Remeber to put on some angostura for a final touch!");
+      $('#hint').fadeIn();
+      $('#hint').delay(3000).fadeOut();
+    }
      if(poured==true && angosturaAdded==true){
       audioApplause.play();
       $('#homeImage').fadeOut();

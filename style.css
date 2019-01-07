@@ -57,8 +57,8 @@ body {
   font-weight: 550;
   color: white;
   transition: all 0.5s;
-  width: 80%;
-  height: 80%;
+  /* width: 80%;
+  height: 80%; */
   margin: 0 auto;
   background: rgba(255,255,255,0.2);
   padding: 20px;
@@ -106,12 +106,37 @@ body {
     background-clip: padding-box;
   }
 
-  .actions{
-    margin: 40px;
+  /* .actions{
     position: relative;
-    z-index: 800;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+    display: inline-block;
+
+    bottom: 0px;
+    right:25%;
+    left:25%;
+    position: relative;
+    margin: auto;
+
+  } */
+
+   #actions{
+     margin: 40px;
+     osition: relative;
   }
 
+  /* button{
+    margin: 0 auto;
+  } */
+
+  /* #bottomCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }  */
   /* #shakeButton{
     margin-top: 0px;
     margin-left: 10px;
@@ -234,13 +259,13 @@ body {
   } */
 
   #volume{
-    background: url(volume.png) no-repeat;
-    display: block;
+    background: url(images/unmute.ico) no-repeat;
+    display: none;
     position: absolute;
     top: 10px;
     right: 10px;
-    height: 32px;
-    width: 32px;
+    height: 48px;
+    width: 48px;
   }
 
 #topLeft {
@@ -457,6 +482,11 @@ body {
   width: 750px;
   margin-top: 100px;
 }
+
+
+
+
+
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
   body {
