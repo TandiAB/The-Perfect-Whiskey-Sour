@@ -188,7 +188,9 @@ body {
 
   button{
     display: none;
-    border: none;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none;
     background-color: Transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 200%;
@@ -202,6 +204,13 @@ body {
     transition: all 0.2s;
     margin: auto;
     margin-top: 20px;
+  }
+
+  #helpButton{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
   }
 
   #yesButton, #noButton{
@@ -262,7 +271,7 @@ body {
   grid-area: bottomRight;
   }
 
-  #container {
+  /* #container {
     display: none;
     height: 370px;
     margin: 0 auto;
@@ -270,7 +279,7 @@ body {
     position: relative;
     top: 80px;
     width: 248px;
-  }
+  } */
 
   #shaker{
     display: none;
@@ -283,7 +292,7 @@ body {
     width: 748px;
   }
 
-  #homeImage {
+  /* #homeImage {
     display: none;
     height: 731px;
     width: 750px;
@@ -291,9 +300,9 @@ body {
     overflow: hidden;
     position: relative;
     background: url("whi.png") no-repeat center;
-  }
+  } */
 
-  #sourImage {
+  /* #sourImage {
     display: none;
     height: 731px;
     width: 750px;
@@ -301,11 +310,11 @@ body {
     overflow: hidden;
     position: relative;
     background: url("sour.jpeg") no-repeat center;
-  }
+  } */
 
-  #container div { position: absolute; }
+  /* #container div { position: absolute; } */
 
-  .pour {
+  /* .pour {
     position: absolute;
     left: 45%;
     width: 20px;
@@ -357,9 +366,9 @@ body {
     height: 0px;
     background-color: #black;
     border-radius: 10px
-  }
+  } */
 
-  #beaker {
+  /* #beaker {
     border: 10px solid black;
     border-top: 10 solid;
     border-radius: 0 0 30px 30px;
@@ -367,7 +376,7 @@ body {
     left: 14px;
     bottom: 0;
     width: 180px;
-  }
+  } */
 
   /* #beaker:before,
   #beaker:after {
@@ -384,15 +393,15 @@ body {
   /* #beaker:before { left: -50px; }
   #beaker:after { right: -50px; } */
 
-  #liquid {
+  /* #liquid {
     background-color: #edaf32;
-    /* border: 10px ; */
+    border: 10px ;
     border-radius: 0 0 20px 20px;
     bottom: 0;
     height: 0px;
     overflow: hidden;
     width: 180px;
-  }
+  } */
 
   /* #liquid:after {
     background-color: rgba(255, 255, 255, 0.25);

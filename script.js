@@ -109,10 +109,10 @@ $( document ).ready(function() {
 
     }
     else{
-      $('.pour').css("background-color", "orange");
-      $('.pour').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
-      $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 50 + "px"}, 2500);
-      totalHeight = totalHeight + 50;
+      // $('.pour').css("background-color", "orange");
+      // $('.pour').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
+      // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 50 + "px"}, 2500);
+      // totalHeight = totalHeight + 50;
       whiskeyAdded = true;
     }
   });
@@ -160,10 +160,10 @@ $( document ).ready(function() {
 
     }
     else{
-      $('.pour2').css("background-color", "yellow");
-      $('.pour2').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
-      $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 30 + "px"}, 2500);
-      totalHeight = totalHeight + 50;
+      // $('.pour2').css("background-color", "yellow");
+      // $('.pour2').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
+      // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 30 + "px"}, 2500);
+      // totalHeight = totalHeight + 50;
       lemonAdded = true;
     }
   });
@@ -206,10 +206,10 @@ $( document ).ready(function() {
     }
     else{
       console.log("Putting on angostura");
-      $('.pour3').css("background-color", "red");
-      $('.pour3').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
-      $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 5 + "px"}, 2500);
-      totalHeight = totalHeight + 5;
+      // $('.pour3').css("background-color", "red");
+      // $('.pour3').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
+      // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 5 + "px"}, 2500);
+      // totalHeight = totalHeight + 5;
       angosturaAdded = true;
     }
   });
@@ -249,10 +249,10 @@ $( document ).ready(function() {
 
     }
     else{
-      $('.pour4').css("background-color", "white");
-      $('.pour4').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
-      $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 20 + "px"}, 2500);
-      totalHeight = totalHeight + 20;
+      // $('.pour4').css("background-color", "white");
+      // $('.pour4').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
+      // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 20 + "px"}, 2500);
+      // totalHeight = totalHeight + 20;
       eggAdded = true;
     }
   });
@@ -298,10 +298,10 @@ $( document ).ready(function() {
 
     }
     if (dryShaked==true){
-      $('.pour5').css("background-color", "blue");
-      $('.pour5').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
-      $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 50 + "px"}, 2500);
-      totalHeight = totalHeight + 50;
+      // $('.pour5').css("background-color", "blue");
+      // $('.pour5').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
+      // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 50 + "px"}, 2500);
+      // totalHeight = totalHeight + 50;
       iceAdded = true;
     }
   });
@@ -341,10 +341,10 @@ $( document ).ready(function() {
 
     }
     else{
-      $('.pour6').css("background-color", "darkgrey");
-      $('.pour6').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
-      $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 20 + "px"}, 2500);
-      totalHeight = totalHeight + 20;
+      // $('.pour6').css("background-color", "darkgrey");
+      // $('.pour6').delay(500).animate({height: '360px'}, 1500).delay(2000).slideUp(500);
+      // $('#liquid').delay(1900).animate({height: parseInt(totalHeight) + 20 + "px"}, 2500);
+      // totalHeight = totalHeight + 20;
       syrupAdded = true;
     }
   });
@@ -376,11 +376,12 @@ $( document ).ready(function() {
       $('#shakeButton').fadeOut();
       $('#pourButton').fadeOut();
       $('#serveButton').fadeOut();
+      $('#shaker').fadeOut();
       $('#congrats').delay(500).fadeIn();
       $('#congrats').delay(2000).fadeOut();
     // }
       // $('.information').delay(2500).fadeIn();
-      $('body').css("background", "url(images/tea.jpg)");
+      // $('body').css("background", "url(images/tea.jpg)");
 
     //   setTimeout(function () {
     //   $('body').css("background", "url(images/tea.jpg)");
@@ -393,6 +394,9 @@ $( document ).ready(function() {
       //     });
   });
 
+  $("#helpButton").click(function(){
+    $("#recipeButton").click();
+  });
 
   $("#historyButton").click(function(){
     $('#modalText').css("display", "block");
