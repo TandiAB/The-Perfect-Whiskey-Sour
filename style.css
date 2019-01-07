@@ -12,7 +12,7 @@ html, body {
 
 
 body {
-  background: url(images/tea.jpg);
+  background: url(images/tea.jpg) no-repeat;
   background-size: cover;
 
 
