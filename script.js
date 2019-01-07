@@ -394,7 +394,7 @@ $( document ).ready(function() {
   });
 
   $("#serveButton").click(function(){
-    // if(poured==true && angosturaAdded==true){
+     if(poured==true && angosturaAdded==true){
       audioApplause.play();
       $('#homeImage').fadeOut();
       $('#container').fadeOut();
@@ -405,14 +405,14 @@ $( document ).ready(function() {
       $('#shaker').fadeOut();
       $('#congrats').delay(500).fadeIn();
       $('#congrats').delay(3000).fadeOut();
-    // }
+      $('.information').delay(6000).fadeIn('slow');
+     }
       // $('.information').delay(2500).fadeIn();
       // $('body').css("background", "url(images/tea.jpg)");
 
     //   setTimeout(function () {
     //   $('body').css("background", "url(images/tea.jpg)");
     // }, 3500);
-      $('.information').delay(6000).fadeIn('slow');
 
       // $("body").stop().animate({opacity: 0},1000,function(){
       //     $(this).css({'background': "url('images/final.jpg')"})
