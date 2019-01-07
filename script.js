@@ -26,7 +26,8 @@ $( document ).ready(function() {
     $('#mixButton').fadeOut();
     $('#homeImage').fadeOut();
     $('.ingredients').delay(500).fadeIn();
-    $('#container').delay(500).fadeIn();
+    $('#shaker').delay(500).fadeIn();
+    // $('#container').delay(500).fadeIn();
     $('.actions').delay(500).fadeIn().css("display","inline-block");
   });
 
@@ -101,6 +102,7 @@ $( document ).ready(function() {
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
+        $('#shaker').fadeOut();
         $('#disgusting').delay(500).fadeIn();
         setTimeout(location.reload.bind(location), 2000);
       });
@@ -151,6 +153,7 @@ $( document ).ready(function() {
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
+        $('#shaker').fadeOut();
         $('#disgusting').delay(500).fadeIn();
         setTimeout(location.reload.bind(location), 2000);
       });
@@ -195,6 +198,7 @@ $( document ).ready(function() {
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
+        $('#shaker').fadeOut();
         $('#disgusting').delay(500).fadeIn();
         setTimeout(location.reload.bind(location), 2000);
       });
@@ -238,6 +242,7 @@ $( document ).ready(function() {
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
+        $('#shaker').fadeOut();
         $('#disgusting').delay(500).fadeIn();
         setTimeout(location.reload.bind(location), 2000);
       });
@@ -286,6 +291,7 @@ $( document ).ready(function() {
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
+        $('#shaker').fadeOut();
         $('#disgusting').delay(500).fadeIn();
         setTimeout(location.reload.bind(location), 2000);
       });
@@ -328,6 +334,7 @@ $( document ).ready(function() {
         $('#popup').fadeOut();
         $('#yesButton').fadeOut();
         $('#noButton').fadeOut();
+        $('#shaker').fadeOut();
         $('#disgusting').delay(500).fadeIn();
         setTimeout(location.reload.bind(location), 2000);
       });
