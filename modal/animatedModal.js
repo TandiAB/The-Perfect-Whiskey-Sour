@@ -27,7 +27,7 @@
             animatedIn:'rotateIn',
             animatedOut:'rotateOut',
             animationDuration:'.6s',
-            overflow:'hidden',
+            overflow:'auto',
             // Callbacks
             beforeOpen: function() {},
             afterOpen: function() {},

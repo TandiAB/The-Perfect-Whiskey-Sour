@@ -28,6 +28,36 @@ $( document ).ready(function() {
     }
   });
 
+
+  //Preload all the images
+//   function preloader() {
+// 	if (document.images) {
+// 		var history = new Image();
+// 		var turkey = new Image();
+// 		var recipe = new Image();
+//     var national2 = new Image();
+//
+// 		history.src = "images/history.jpg";
+// 		turkey.src = "images/turkey.jpg";
+// 		recipe.src = "images/recipe.jpg";
+//     national2.src = "national2.jpg";
+// 	}
+// }
+// function addLoadEvent(func) {
+// 	var oldonload = window.onload;
+// 	if (typeof window.onload != 'function') {
+// 		window.onload = func;
+// 	} else {
+// 		window.onload = function() {
+// 			if (oldonload) {
+// 				oldonload();
+// 			}
+// 			func();
+// 		}
+// 	}
+// }
+// addLoadEvent(preloader);
+
   $("#mixButton").click(function() {
     audio.play();
     // $('body').css("background", "linear-gradient(#374150, #171b20)");
@@ -461,6 +491,7 @@ $( document ).ready(function() {
       $('#pourButton').fadeOut();
       $('#serveButton').fadeOut();
       $('#shaker').fadeOut();
+      $('#hint').css("display", "none");
       $('#congrats').delay(500).fadeIn();
       $('#congrats').delay(3000).fadeOut();
       $('.information').delay(6000).fadeIn('slow');
