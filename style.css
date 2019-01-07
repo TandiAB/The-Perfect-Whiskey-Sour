@@ -12,14 +12,8 @@ html, body {
 
 
 body {
-  /* background: url(images/tea.jpg); */
-  /* background-size: 1920px auto; */
-
-  background: url(images/tea.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(images/tea.jpg);
+  background-size: 1920px auto;
 
   display: grid;
   grid-template-areas:
@@ -224,7 +218,7 @@ body {
 #animatedModal{
   background-image: url() no-repeat;
   display: block;
-  background-size: auto;
+  background-size: 1920px auto;
 }
 
 #modalText{
