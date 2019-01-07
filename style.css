@@ -13,7 +13,7 @@ html, body {
 
 body {
   background: url(images/tea.jpg);
-  background-size: contain;
+  background-size: cover;
 
 
   display: grid;
@@ -219,7 +219,7 @@ body {
 #animatedModal{
   background-image: url() no-repeat;
   display: block;
-  background-size: contain;
+  background-size: cover;
 }
 
 #modalText{
