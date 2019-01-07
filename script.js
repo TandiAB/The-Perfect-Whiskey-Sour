@@ -259,7 +259,7 @@ $( document ).ready(function() {
     $('#sourRecipe').css("display", "none");
     $('#modalText').css("top", "auto");
     $('#modalText').css("right", "auto");
-    $('#animatedModal').css("background", "url(images/history.jpg no-repeat)");
+    $('#animatedModal').css("background", "url(images/history.jpg) no-repeat");
     $('#modalText').text("The year: 1792. You: a sailor crossing the Atlantic for North America. Food is dried. Water is no good. And scurvy is a constant worry. Enter, the Whiskey Sour! No, really. Although the recipe was not written down until 1862 by Jerry Thomas in The Bartenders Guide, sours were a basic recipe for centuries. According to Brian Petro of The Alcohol Professor, Vice Admiral Edward Vernon of England began mixing a few ingredients together to serve to his crew, to help combat sea-sickness, malnutrition, and scurvy. But because they didn't want an entire ship of intoxicated sailors, they began to water it down with lemon or lime juice. While the British used Gin and Brandy, Americans favored Whiskey, and thus the Whiskey Sour was born.");
     $("#demo01").animatedModal({
     });
