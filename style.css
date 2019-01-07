@@ -217,7 +217,6 @@ body {
   }
 
 #animatedModal{
-  background-image: url() no-repeat;
   display: block;
   background-size: cover;
 }
