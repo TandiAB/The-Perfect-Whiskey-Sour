@@ -13,7 +13,7 @@ html, body {
 
 body {
   background: url(images/tea.jpg);
-  background-size: cover;
+  background-size: 1920px auto;
   display: grid;
   grid-template-areas:
     "topLeft topCenter topRight"
